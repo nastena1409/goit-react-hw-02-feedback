@@ -41,7 +41,7 @@ export class App extends Component {
          <button>Good</button>
          <button>Neutral</button>
          <button>Bad</button>
-         <h2>Statistics</h2>
+         
          <Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positivePercentage={this.countPositiveFeedbackPercentage()}/>   
     </div>
   );
