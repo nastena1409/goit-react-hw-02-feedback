@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Statistics } from "./Statistics/Statistics";
 
 export class App extends Component {
 
@@ -41,13 +42,7 @@ export class App extends Component {
          <button>Neutral</button>
          <button>Bad</button>
          <h2>Statistics</h2>
-            <ul>
-              <li>Good: {good}</li>
-              <li>Neutral: {neutral}</li>
-              <li>Bad: {bad}</li>
-              <li>Total: {this.countTotalFeedback()}</li>
-              <li>Positive feedback: {this.countPositiveFeedbackPercentage()}%</li>
-            </ul>
+         <Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positivePercentage={this.countPositiveFeedbackPercentage()}/>   
     </div>
   );
   }
