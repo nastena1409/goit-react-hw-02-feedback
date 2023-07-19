@@ -40,7 +40,7 @@ export class App extends Component {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
+        margin: 40,
         fontSize: 40,
         color: '#010101'
       }}
