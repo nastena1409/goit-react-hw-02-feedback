@@ -13,7 +13,7 @@ export class App extends Component {
   }
 
   onLeaveFeedback = option => {
-    this.setState({ [option]: this.state[option] += 1 })
+    this.setState({ [option]: this.state[option] + 1 })
   }
 
   countTotalFeedback() {
